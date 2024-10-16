@@ -46,7 +46,7 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
           let isoCode = arguments["isoCode"] as! String
         
         
-        let phoneUtils : NBPhoneNumberUtil = NBPhoneNumberUtil()
+        let phoneUtils : NBPhoneNumberUtil = NBPhoneNumberUtil.sharedInstance()
         
         do {
             let p : NBPhoneNumber = try phoneUtils.parse(phoneNumber, defaultRegion: isoCode.uppercased())
@@ -66,7 +66,7 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
           let isoCode = arguments["isoCode"] as! String
         
         
-        let phoneUtils : NBPhoneNumberUtil = NBPhoneNumberUtil()
+        let phoneUtils : NBPhoneNumberUtil = NBPhoneNumberUtil.sharedInstance()
         
         do {
             let p : NBPhoneNumber = try phoneUtils.parse(phoneNumber, defaultRegion: isoCode.uppercased())
@@ -85,7 +85,7 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
           let isoCode = arguments["isoCode"] as! String
         
         
-        let phoneUtils : NBPhoneNumberUtil = NBPhoneNumberUtil()
+        let phoneUtils : NBPhoneNumberUtil = NBPhoneNumberUtil.sharedInstance()
         
         do {
             let p : NBPhoneNumber = try phoneUtils.parse(phoneNumber, defaultRegion: isoCode.uppercased())
@@ -108,7 +108,7 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
           let isoCode = arguments["isoCode"] as! String
         
         
-        let phoneUtils : NBPhoneNumberUtil = NBPhoneNumberUtil()
+        let phoneUtils : NBPhoneNumberUtil = NBPhoneNumberUtil.sharedInstance()
         
         do {
             let p : NBPhoneNumber = try phoneUtils.parse(phoneNumber, defaultRegion: isoCode.uppercased())
@@ -148,7 +148,7 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
         let isoCode = arguments["isoCode"] as! String
       
       
-      let phoneUtils : NBPhoneNumberUtil = NBPhoneNumberUtil()
+      let phoneUtils : NBPhoneNumberUtil = NBPhoneNumberUtil.sharedInstance()
       
       do {
           let _ : NBPhoneNumber = try phoneUtils.parse(phoneNumber, defaultRegion: isoCode.uppercased())
