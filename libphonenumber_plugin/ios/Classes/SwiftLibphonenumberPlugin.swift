@@ -5,12 +5,12 @@ import libPhoneNumber_iOS
 
 public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
     
-    let libphonenumber : LibphonenumberPlugin = LibphonenumberPlugin()
+    let libphonenumber : LibphonenumberPlugin = LibphonenumberPlugin.sharedInstance();
     
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "plugin.libphonenumber", binaryMessenger: registrar.messenger())
     
-    let instance = SwiftLibphonenumberPlugin()
+    let instance = SwiftLibphonenumberPlugin.sharedInstance()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 
